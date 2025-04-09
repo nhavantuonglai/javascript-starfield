@@ -1,62 +1,48 @@
-# File and folder renamer (FFR)
+# Starfield Animation
 
 (Original Vietnamese below)
 
-_File and folder renamer (FFR) is a Python tool designed to automate the renaming of files and folders. It supports multiple renaming options, including date based formats, size-based formats, sequential numbering, adding custom characters, and random names. Ideal for organizing files and folders efficiently with customizable workflows._
+_Starfield is a JavaScript package that generates a dynamic starfield background with radiating stars. It features customizable star sizes, speeds, and colors, perfect for adding a cosmic touch to websites or applications._
 
 ## Installation Guide
 
-To install, clone this repository and run the Python script directly:
+To install, use npm:
 
 ```
-npm i folder-attribute
+npm install starfield
 ```
 
-No additional dependencies are required beyond the Python standard library.
+No additional dependencies are required beyond a modern browser.
 
 ## Purpose
 
-– Rename files and folders based on current date and time with sequential numbering.
+– Create a starfield background with stars radiating from the center.
 
-– Rename files with their size (in KB) appended to the name.
+– Automatically adjust to window size and visibility state.
 
-– Assign custom prefixes with sequential numbers.
-
-– Add custom characters to the beginning or end of names.
-
-– Generate random names for files and folders.
+– Provide an option to stop and clean up the animation.
 
 ## Workflow
 
-1. Select location: Input `1` to rename folders and subfolders, `2` to rename files in a folder, or `0` to exit. No default value; users must choose explicitly.
+1. Include the package: Add the script to your HTML or import it in your JavaScript project.
 
-2. Specify directory: Enter the path to the target folder or leave blank to use the current directory (`.`). Defaults to the current directory for convenience.
+2. Automatic activation: The starfield starts animating when the DOM is loaded and adapts to window resizing or visibility changes.
 
-3. Choose feature: Select a renaming option:
+3. Manual control (optional): Use `initStarfield()` to start manually or `destroy()` to stop and remove the animation.
 
-– `1`: Rename using a format (proceed to step 4).
+Example usage in HTML:
 
-– `2`: Add custom characters (proceed to step 4).
+```
+<script src="node_modules/starfield/index.js"></script>
+```
 
-– `3`: Rename randomly (proceed to step 5).
+Example usage in JavaScript:
 
-– `0`: Go back to the previous step.
-
-4. Configure feature:
-
-For format-based renaming (`1`):
-
-– Choose format: `1` for `yyyymmdd-hhmmss` (e.g., `20250409-123456-0000`), `2` for `yyyymmdd-hhmmss-(size)` (e.g., `20250409-123456-3686`, size in KB), or `3` for `xxxx-(sequence)` (e.g., `file-0001`).
-
-– For `xxxx-(sequence)`, input a custom prefix (defaults to `file`) or press `0` to go back.
-
-For adding characters (`2`):
-
-– Choose position: `1` to add characters before the name, `2` to add after, or `0` to go back.
-
-– Input the characters to add (e.g., `prefix_` or `_suffix`), or press `0` to go back.
-
-5. Process and complete: The tool processes all targeted files or folders and displays the result (e.g., _Completed! Renamed X/Y items_). Users can then choose to restart (`0`), visit the website (`1`), or Instagram (`2`). Backtracking: At any step, input `0` to return to the previous step.
+```
+const { initStarfield } = require('starfield');
+initStarfield();
+starfield.destroy();
+```
 
 ## Contact & Support
 
@@ -66,65 +52,51 @@ For adding characters (`2`):
 
 If you have any questions or suggestions, feel free to reach out for the fastest support.
 
-Don’t forget to star this repository if you find it useful!
+Don’t forget to star this repository if you find it useful.
 
-# Công cụ đổi tên tệp và thư mục (FFR)
+# Hiệu ứng trường sao
 
-_Công cụ đổi tên tệp và thư mục (FFR) là một tiện ích Python tự động hóa việc đổi tên tệp và thư mục. Nó hỗ trợ nhiều tùy chọn đổi tên, bao gồm định dạng dựa trên ngày giờ, kích thước tệp, số thứ tự, thêm ký tự tùy chỉnh, và tạo tên ngẫu nhiên. Phù hợp để sắp xếp tệp và thư mục một cách hiệu quả với quy trình tùy chỉnh._
+_Hiệu ứng trường sao là một gói JavaScript tạo ra một nền trường sao động với các ngôi sao tỏa ra từ trung tâm. Nó có kích thước, tốc độ và màu sắc ngôi sao tùy chỉnh, hoàn hảo để thêm nét vũ trụ vào trang web hoặc ứng dụng._
 
 ## Hướng dẫn cài đặt
 
-Để cài đặt, sao chép repository này và chạy trực tiếp script Python:
+Để cài đặt, sử dụng npm:
 
 ```
-npm i folder-attribute
+npm install starfield
 ```
 
-Không yêu cầu thêm thư viện phụ thuộc ngoài thư viện chuẩn của Python.
+Không yêu cầu thêm thư viện phụ thuộc ngoài trình duyệt hiện đại.
 
 ## Công dụng
 
-– Đổi tên tệp và thư mục dựa trên ngày giờ hiện tại với số thứ tự tăng dần.
+– Tạo nền trường sao với các ngôi sao tỏa ra từ trung tâm.
 
-– Đổi tên tệp kèm theo kích thước (tính bằng KB).
+– Tự động điều chỉnh theo kích thước cửa sổ và trạng thái hiển thị.
 
-– Gán tiền tố tùy chỉnh với số thứ tự.
-
-– Thêm ký tự tùy chỉnh vào đầu hoặc cuối tên.
-
-– Tạo tên ngẫu nhiên cho tệp và thư mục.
+– Cung cấp tùy chọn dừng và dọn dẹp hoạt hình.
 
 ## Flow thao tác
 
-1. Chọn vị trí: Nhập `1` để đổi tên thư mục và thư mục con, `2` để đổi tên tệp trong thư mục, hoặc `0` để thoát. Không có giá trị mặc định; người dùng phải chọn rõ ràng.
+1. Thêm gói: Thêm script vào HTML hoặc nhập vào dự án JavaScript của bạn.
 
-2. Chỉ định thư mục: Nhập đường dẫn đến thư mục mục tiêu hoặc để trống để dùng thư mục hiện tại (`.`). Mặc định là thư mục hiện tại để tiện lợi.
+2. Kích hoạt tự động: Trường sao bắt đầu hoạt hình khi DOM được tải và thích nghi với thay đổi kích thước cửa sổ hoặc trạng thái hiển thị.
 
-3. Chọn tính năng: Chọn tùy chọn đổi tên:
+3. Điều khiển thủ công (tùy chọn): Sử dụng `initStarfield()` để bắt đầu thủ công hoặc `destroy()` để dừng và xóa hoạt hình.
 
-– `1`: Đổi tên theo định dạng (chuyển sang bước 4).
+Ví dụ sử dụng trong HTML:
 
-– `2`: Thêm ký tự tùy chỉnh (chuyển sang bước 4).
+```
+<script src="node_modules/starfield/index.js"></script>
+```
 
-– `3`: Đổi tên ngẫu nhiên (chuyển sang bước 5).
+Ví dụ sử dụng trong JavaScript:
 
-– `0`: Quay lại bước trước.
-
-4. Cấu hình tính năng:
-
-Đổi tên theo định dạng (`1`):
-
-– Chọn định dạng: `1` cho `yyyymmdd-hhmmss` (Ví dụ: `20250409-123456-0000`), `2` cho `yyyymmdd-hhmmss-(kích thước)` (Ví dụ: `20250409-123456-3686`, kích thước bằng KB), hoặc `3` cho `xxxx-(số thứ tự)` (Ví dụ: `file-0001`).
-
-– Với `xxxx-(số thứ tự)`, nhập tiền tố tùy chỉnh (mặc định là `file`) hoặc nhấn `0` để quay lại.
-
-Thêm ký tự (`2`):
-
-– Chọn vị trí: `1` để thêm ký tự trước tên, `2` để thêm sau tên, hoặc `0` để quay lại.
-
-– Nhập ký tự cần thêm (Ví dụ: `prefix_` hoặc `_suffix`), hoặc nhấn `0` để quay lại.
-
-5. Xử lý và hoàn tất: Công cụ xử lý tất cả tệp hoặc thư mục được chọn và hiển thị kết quả (Ví dụ: _Hoàn tất! Đã đổi tên X/Y mục_). Sau đó, người dùng có thể chọn chạy lại (`0`), truy cập website (`1`), hoặc Instagram (`2`). Quay lại: Tại bất kỳ bước nào, nhập `0` để trở về bước trước.
+```
+const { initStarfield } = require('starfield');
+initStarfield();
+starfield.destroy();
+```
 
 ## Liên hệ & Hỗ trợ
 
@@ -134,4 +106,4 @@ Thêm ký tự (`2`):
 
 Nếu bạn có câu hỏi hoặc đề xuất, đừng ngần ngại liên hệ để được hỗ trợ nhanh nhất.
 
-Đừng quên star repository này nếu bạn thấy nó hữu ích!
+Đừng quên star repository này nếu bạn thấy nó hữu ích.
