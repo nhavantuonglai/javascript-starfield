@@ -9,7 +9,7 @@ _Starfield is a JavaScript package that generates a dynamic starfield background
 To install, use npm:
 
 ```
-npm install starfield
+npm install javascript-starfield
 ```
 
 No additional dependencies are required beyond a modern browser.
@@ -33,15 +33,15 @@ No additional dependencies are required beyond a modern browser.
 Example usage in HTML:
 
 ```
-<script src="node_modules/starfield/index.js"></script>
+<script src="node_modules/javascript-starfield/index.js"></script>
 ```
 
 Example usage in JavaScript:
 
 ```
-const { initStarfield } = require('starfield');
+const { initStarfield } = require('javascript-starfield');
 initStarfield();
-starfield.destroy();
+javascript-starfield.destroy();
 ```
 
 ## Contact & Support
@@ -63,7 +63,7 @@ _Hiệu ứng trường sao là một gói JavaScript tạo ra một nền trư�
 Để cài đặt, sử dụng npm:
 
 ```
-npm install starfield
+npm install javascript-starfield
 ```
 
 Không yêu cầu thêm thư viện phụ thuộc ngoài trình duyệt hiện đại.
@@ -87,15 +87,15 @@ Không yêu cầu thêm thư viện phụ thuộc ngoài trình duyệt hiện �
 Ví dụ sử dụng trong HTML:
 
 ```
-<script src="node_modules/starfield/index.js"></script>
+<script src="node_modules/javascript-starfield/index.js"></script>
 ```
 
 Ví dụ sử dụng trong JavaScript:
 
 ```
-const { initStarfield } = require('starfield');
+const { initStarfield } = require('javascript-starfield');
 initStarfield();
-starfield.destroy();
+javascript-starfield.destroy();
 ```
 
 ## Liên hệ & Hỗ trợ

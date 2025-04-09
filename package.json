@@ -1,6 +1,6 @@
 {
 	"name": "javascript-starfield",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Starfield is a JavaScript package that generates a dynamic starfield background with radiating stars.",
 	"main": "index.js",
 	"scripts": {
