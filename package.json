@@ -1,0 +1,40 @@
+{
+	"name": "starfield",
+	"version": "1.0.1",
+	"description": "File and folder renamer (FFR) is a Python tool designed to automate the renaming of files and folders. It supports multiple renaming options, including date-based formats, size based formats, sequential numbering, adding custom characters, and random names.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+
+	"keywords": [
+		"npm",
+		"css",
+		"folder",
+		"datetime",
+		"folder editor",
+		"folder attribute",
+		"attribute",
+		"editor",
+		"class",
+		"python script",
+		"python",
+		"python3",
+		"python 3",
+		"nhavantuonglai"
+	],
+
+	"repository": {
+		"type": "website",
+		"url": "https://nhavantuonglai.com"
+	},
+
+	"author": "nhavantuonglai",
+	"license": "MIT",
+	"dependencies": {
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	}
+}
