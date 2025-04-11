@@ -56,7 +56,7 @@ Don’t forget to star this repository if you find it useful.
 
 # Hiệu ứng trường sao
 
-_Hiệu ứng trường sao là một gói JavaScript tạo ra một nền trường sao động với các ngôi sao tỏa ra từ trung tâm. Nó có kích thước, tốc độ và màu sắc ngôi sao tùy chỉnh, hoàn hảo để thêm nét vũ trụ vào trang web hoặc ứng dụng._
+_Hiệu ứng trường sao là một gói JavaScript tạo ra một nền trường sao động với các ngôi sao tỏa ra từ trung tâm. Nó có kích thước, tốc độ và màu sắc ngôi sao tùy chỉnh, hoàn hảo để thêm nét vũ trụ vào website hoặc ứng dụng._
 
 ## Hướng dẫn cài đặt
 
